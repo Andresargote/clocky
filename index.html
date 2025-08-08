@@ -1,73 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clocky</title>
-</head>
-<body>
-    <h1>Clocky ⏰</h1>
-    <p>Tu asistente personal para el control de horas de trabajo</p>
-    <small>Jornada laboral estándar: 8 horas de trabajo efectivo + 30 minutos de descanso</small>
-    <hr/>
-    <section>
-        <h2>📊 Tu balance de horas</h2>
-        <p><strong>Horas trabajadas:</strong> <span id="hoursSummary">0</span> horas</p>
-        <p><strong>Horas extras acumuladas:</strong> <span id="hoursInFavorSummary">0</span> horas</p>
-        <p><strong>Horas pendientes:</strong> <span id="hoursAgainstSummary">0</span> horas</p>
-    </section>
-    <hr/>
-    <section>
-        <h2>🕐 Registrar jornada de hoy</h2>
-        <label for="from">Hora de entrada:</label>
-        <select id="from">
-            <option value="" selected disabled hidden>Selecciona la hora</option>
-            <option>7:00</option>
-            <option>7:15</option>
-            <option>7:30</option>
-            <option>7:45</option>
-            <option>8:00</option>
-            <option>8:15</option>
-            <option>8:30</option>
-            <option>8:45</option>
-            <option>9:00</option>
-            <option>9:15</option>
-            <option>9:30</option>
-            <option>9:45</option>
-            <option>10:00</option>
-            <option>11:00</option>
-            <option>12:00</option>
-        </select>
-        <label for="to">Hora de salida:</label>
-        <select id="to">
-            <option value="" selected disabled hidden>Selecciona la hora</option>
-            <option>16:00</option>
-            <option>16:15</option>
-            <option>16:30</option>
-            <option>16:45</option>
-            <option>17:00</option>
-            <option>17:15</option>
-            <option>17:30</option>
-            <option>17:45</option>
-            <option>18:00</option>
-            <option>18:15</option>
-            <option>18:30</option>
-            <option>18:45</option>
-            <option>19:00</option>
-            <option>20:00</option>
-            <option>21:00</option>
-            <option>22:00</option>
-            <option>22:30</option>
-            <option>23:00</option>
-            <option>24:00</option>
-        </select>
-        <button id="registerHours">✅ Registrar jornada</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Clocky</title>
+    </head>
+    <body>
+        <h1>Clocky ⏰</h1>
+        <p>Tu asistente personal para el control de horas de trabajo</p>
+        <small
+            >Jornada laboral estándar: 8 horas de trabajo efectivo + 30 minutos
+            de descanso</small
+        >
+        <hr />
+        <section>
+            <h2>📊 Tu balance de horas</h2>
+            <p>
+                <strong>Horas trabajadas:</strong>
+                <span id="hoursSummary">0</span> horas
+            </p>
+            <p>
+                <strong>Horas extras acumuladas:</strong>
+                <span id="hoursInFavorSummary">0</span> horas
+            </p>
+            <p>
+                <strong>Horas pendientes:</strong>
+                <span id="hoursAgainstSummary">0</span> horas
+            </p>
+        </section>
+        <hr />
+        <section>
+            <h2>🕐 Registrar jornada de hoy</h2>
+            <label for="from">Hora de entrada:</label>
+            <select id="from">
+                <option value="" selected disabled hidden>
+                    Selecciona la hora
+                </option>
+                <option>7:00</option>
+                <option>7:15</option>
+                <option>7:30</option>
+                <option>7:45</option>
+                <option>8:00</option>
+                <option>8:15</option>
+                <option>8:30</option>
+                <option>8:45</option>
+                <option>9:00</option>
+                <option>9:15</option>
+                <option>9:30</option>
+                <option>9:45</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+            </select>
+            <label for="to">Hora de salida:</label>
+            <select id="to">
+                <option value="" selected disabled hidden>
+                    Selecciona la hora
+                </option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>15:30</option>
+                <option>16:00</option>
+                <option>16:15</option>
+                <option>16:30</option>
+                <option>16:45</option>
+                <option>17:00</option>
+                <option>17:15</option>
+                <option>17:30</option>
+                <option>17:45</option>
+                <option>18:00</option>
+                <option>18:15</option>
+                <option>18:30</option>
+                <option>18:45</option>
+                <option>19:00</option>
+                <option>20:00</option>
+                <option>21:00</option>
+                <option>22:00</option>
+                <option>22:30</option>
+                <option>23:00</option>
+                <option>24:00</option>
+            </select>
+            <button id="registerHours">✅ Registrar jornada</button>
 
-        <h3>📝 Historial de jornadas</h3>
-        <ol>
-            <li></li>
-        </ol>
-    </section>
-</body>
-<script type="module" src="index.js"></script>
+            <h3>📝 Historial de jornadas</h3>
+            <ol>
+                <li></li>
+            </ol>
+        </section>
+    </body>
+    <script type="module" src="index.js"></script>
 </html>
